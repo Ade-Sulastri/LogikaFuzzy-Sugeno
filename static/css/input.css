@@ -1,0 +1,45 @@
+.input-container {
+  display: flex;
+  background: white;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #23272F 0%, #14161a 100%);
+  box-shadow: 10px 10px 10px #0e101377, -10px -10px 40px #383e4b;
+  gap: 0.3rem;
+}
+
+.input-container input {
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  background: #23272F;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border: 1px solid transparent;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container input:focus {
+  border: 1px solid #09f;
+  box-shadow: 
+    inset 0px 0px 10px rgba(0, 102, 255, 0.5), 
+    inset 0px 0px 10px rgba(0, 153, 255, 0.5), 
+    0px 0px 100px rgba(0, 153, 255, 0.5), 
+    0px 0px 100px rgba(0, 102, 255, 0.5);
+   outline: none;
+}
+
+
+@media (max-width: 500px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-container input {
+    border-radius: 0.8rem;
+  }
+
+  .input-container button {
+    padding: 1rem;
+    border-radius: 0.8rem;
+  }
+}
